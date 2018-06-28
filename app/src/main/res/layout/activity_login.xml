@@ -1,10 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:background="@drawable/background_image">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="W E L C O M E"
+        android:textColor="@android:color/holo_blue_light"
+        android:textStyle="bold"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/userid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:hint="UserId"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/holo_blue_bright"
+        android:drawableLeft="@drawable/ic_login"
+
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="217dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_key"/>
+
+    <CheckBox
+        android:id="@+id/RememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="226dp"
+        android:text="Remember Me ?" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        style="@style/AlertDialog.AppCompat.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/userid"
+        android:layout_marginBottom="175dp"
+        android:layout_weight="0.5"
+        android:text="Sign In" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        style="@style/AlertDialog.AppCompat.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/userid"
+        android:layout_alignTop="@+id/btnSignIn"
+        android:layout_weight="0.5"
+        android:text="Sign Up" />
+
+    <TextView
+        android:id="@+id/create"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/userid"
+        android:layout_marginBottom="138dp"
+        android:hint="No account yet? Create one"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="91dp"
+        android:layout_marginEnd="133dp"
+        android:hint="Version: 1.0(1)"
+        android:inputType="text" />
 
 
-</LinearLayout>
+</RelativeLayout>
