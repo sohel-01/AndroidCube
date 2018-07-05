@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">EmpPayroll</string>
+    <string name="remember_me">Remember Me ?</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
 </resources>
