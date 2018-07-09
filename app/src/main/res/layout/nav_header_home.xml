@@ -11,7 +11,7 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark"
-    android:background="#B03A2E"
+    android:background="#7f7f7f"
     >
 
     <ImageView
@@ -29,7 +29,7 @@
         android:paddingTop="8dp"
         android:text="Employee Payroll "
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="#008000"
+        android:textColor="#ffa500"
         android:textStyle="bold"
         android:textSize="22dp"
     />
