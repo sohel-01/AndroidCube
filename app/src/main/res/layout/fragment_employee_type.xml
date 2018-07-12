@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragEmpType"
+    >
+
+    <TextView
+        android:id="@+id/txtTofEmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Type Of Employment" />
+
+    <RadioGroup
+        android:layout_marginTop="15dp"
+       android:id="@+id/rgEmpType"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+
+       >
+       <RadioButton
+           android:id="@+id/rbPartTime"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="0.33"
+           android:text="Part Time"
+           android:onClick="pt_type"
+           tools:ignore="OnClick" />
+       <RadioButton
+           android:id="@+id/rbIntern"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="0.33"
+           android:text="Intern"
+           android:onClick="intern_details"
+           tools:ignore="OnClick" />
+       <RadioButton
+           android:id="@+id/rbFullTime"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="0.33"
+           android:text="Full Time"
+           />
+   </RadioGroup>
+
+</FrameLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffd993"
+    android:id="@+id/layout_add_employeeDetails"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtEnterEmployee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e5e5e5"
+            android:gravity="center"
+            android:hint="@string/enter_employee_name"
+            android:padding="12dp"
+
+            />
+
+        <EditText
+            android:id="@+id/dateOfBirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:editable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:hint="Select Date of Birth"
+            android:longClickable="false" />
+
+        <CheckBox
+            android:id="@+id/chkIsVehicle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="chkboxSelected"
+            android:text="Is Vehicle Available ?"
+            android:textSize="15dp" />
+
+        <fragment
+            android:id="@+id/fragVehicleSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_vehicel_select"
+
+            />
+
+        <fragment
+            android:id="@+id/fragTypeEmp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/fragment_employee_type" />
+        <fragment
+            android:id="@+id/fragSelectPTType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/frag_layout_part_time_type"
+            />
+
+        <fragment
+            android:id="@+id/fragCommBased"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/frag_layout_commisiion_based" />
+
+        <fragment
+            android:id="@+id/fragFixBased"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/frag_layout_fixed_based" />
+
+        <fragment
+            android:id="@+id/fragIntern"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/frag_layout_intern" />
+
+        <fragment
+            android:id="@+id/fragFullTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/frag_layout_full_time" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Details"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+</ScrollView>

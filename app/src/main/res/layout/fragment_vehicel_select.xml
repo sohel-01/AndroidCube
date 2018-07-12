@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtVehType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Type of Vehicle" />
+
+    <RadioGroup
+        android:layout_marginTop="18dp"
+        android:id="@+id/rgbVehicle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <RadioButton
+            android:id="@+id/rbCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@string/car" />
+
+        <RadioButton
+            android:id="@+id/rbMotorcycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="MotorCycle" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgMake"
+            android:layout_width="1dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.5"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/actvMaker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="Enter Maker"
+                android:textColor="@android:color/holo_orange_dark" />
+
+            <EditText
+                android:id="@+id/txtVehName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:hint="Enter Vehicle Name"
+                android:inputType="textPersonName"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtLicencePlate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:hint="Enter Licence Plate"
+        android:gravity="center"
+        android:inputType="text"
+        />
+
+</FrameLayout>

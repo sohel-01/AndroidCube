@@ -20,6 +20,7 @@
         android:layout_height="wrap_content"
         android:padding="10dp"
         android:src="@mipmap/ic_logo"
+        android:layout_gravity="center"
         />
 
     <TextView

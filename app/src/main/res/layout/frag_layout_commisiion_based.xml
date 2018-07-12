@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<EditText
+    android:id="@+id/edtCommRate"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Enter Rate Per Hour"
+    android:gravity="center"
+    />
+    <EditText
+        android:id="@+id/edtCommHour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Hours Worked"
+        android:gravity="center"
+        />
+    <EditText
+        android:id="@+id/edtCommPercent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Commission Percent"
+        android:gravity="center"
+        />
+
+</LinearLayout>

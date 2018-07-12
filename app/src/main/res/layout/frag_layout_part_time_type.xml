@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txtPTtype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Type of PartTime"
+        />
+<RadioGroup
+    android:id="@+id/rgPartTimeType"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/rbCommBasedPT"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:text="Commission Based"
+        android:textSize="18dp"
+        />
+    <RadioButton
+        android:id="@+id/rbFixBasedPT"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:text="Fixed Based"
+        android:textSize="20dp"
+        />
+</RadioGroup>
+</LinearLayout>
